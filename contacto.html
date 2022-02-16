@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css" TYPE="text/css">
+    <title>Contacto</title>
+</head>
+<body class="bodycontactos">
+    <header>
+        <!--Iconos para el header-->   
+        <div class="header__iconos">
+            <img src="Images/Disney sin fondo.png" alt="logo de Disney" class="header__div--logodis">
+            <img src="Images/Logo sin fondo Vegas.png" alt="logo de Vegas" class="header__div--logovegas">
+        </div>
+
+       <!--Barra de Navegacion--> 
+       <nav>
+            <ul class="navegador__lista">
+                <li>
+                    <a href="Index.html"> <h3>Home</h3></a>           
+                </li>
+                <li>
+                    <a href="Mapas.html"> <h3>Mapas útiles</h3></a>           
+                </li>
+                
+                <li>
+                    <a href="atracciones.html"> <h3>Elegi tus atracciones</h3></a>           
+                </li>
+                <li>
+                    <a href="alojamiento.html"> <h3>Donde hospedarte</h3></a>           
+                </li>
+                
+                <li>
+                    <a href="contacto.html"> <h3>Contacto</h3></a>           
+                </li>
+                
+               
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!--Formulario-->
+    <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded" class="formespacios">
+        
+            <label for="" class="label">Nombre</label> <br>
+            <input type="text" class="field" required> <br><br>
+
+            <label for="" class="label">Apellido</label><br>
+            <input type="text" class="field"> <br><br>
+            
+            <label for="" class="label">Nacionalidad</label><br>
+            <input type="text" class="field"> <br><br>
+
+            <label for="" class="label" style="place-content: none;">Fecha de nacimiento</label><br>
+            <input type="date" class="field" required> <br><br>
+            
+            <label for="" class="label">email</label> <br>
+            <input type="email" class="field" required> <br><br>
+            
+            <label for="borrar" class="label"></label> <br>
+            <input type="reset" name="borrar" class="field"> <br><br>
+            
+            <label for="Enviar" class="label"></label> <br>
+            <input type="submit" name="enviar" class="field"> <br><br>
+    </form>
+    
+  <!--footer que se repite en todas la páginas-->
+  <footer class="footer__iconos">
+    <h3 class="footer__h3">contacto@vegasdisney.com</h3>
+    <div class="redesSociales">
+        <img src="https://icongr.am/entypo/facebook.svg?size=60&color=cad7f2" alt="logoDeFacebook" class="logofacebook">
+        <img src="https://icongr.am/entypo/instagram.svg?size=60&color=cad7f2" alt="logoDeInstagram" class="logoInsta">
+        <img src="https://icongr.am/entypo/youtube.svg?size=60&color=cad7f2" alt="logoDeInstagram" class="logoyoutube">
+    </div>  
+</footer>
+</body>
+</html>

@@ -1,0 +1,616 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.header__iconos{
+    background-color: rgb(252, 250, 249);
+    width: 100%;
+    display: flex;
+    height: 65px;
+}
+
+.header__div--logodis {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.header__div--logovegas {
+    margin-left: auto; 
+    margin-right: auto; 
+    transform: scale(0.7);
+}
+
+.navegador__lista{
+    width: 100%;
+    height: 40px;
+    background-color: #1081d7cd;    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    font-size: 15px;
+    font-family:sans-serif;
+    list-style: none;
+}
+
+li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: rgb(78, 89, 218);
+    outline: none;
+}
+
+.main__consejo{
+    height: 35px;
+    background-color: #d5a60c8e;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.HeroIndex{
+    width: 100%;
+    height: 680px;
+    background-image: url(https://images.unsplash.com/photo-1581904902287-0991e3fd1725?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+/* defino la estructura de la galeria de imágenes con grid, o sea la cantidad de columnas y de filas*/
+.galeria{
+    /* width: 100%; */
+    /* padding-top: 30px; */
+    background-color: #1081d7cd;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.galeriaimagen1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail\ copia.png");
+    background-repeat: no-repeat;
+    background-size: 80%;   
+    background-position: center;
+
+}
+
+.galeriaimagen2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail\ copia.png");
+    background-repeat: no-repeat;
+    background-size: 45%;  
+    background-position: center;
+}
+
+.galeriaimagen3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail\ copia.png");
+    background-repeat: no-repeat;
+    background-size: 70%;  
+    background-position: center; 
+    
+}
+
+.galeriaimagen4{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail\ copia.png");
+    /* transform: scale(1.25); */
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    background-position: center; 
+    
+}
+
+.galeriaimagen5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail\ copia.png");
+    background-repeat: no-repeat;
+    background-size: 90%;  
+    background-position: center;         
+}
+
+.galeriaimagen6{
+    height: 350px;
+    width: 350px;
+    padding-top: 50px;
+    background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail\ copia.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.footer__iconos{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.footer__h3{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+
+.redesSociales{
+    padding-right: 20px;
+}
+
+.logofacebook{
+    transform: scale(0.8);
+}
+
+.logoInsta{
+    transform: scale(0.8);
+}
+
+.logoyoutube{
+    transform: scale(0.8);
+}
+
+.HeroMapa{
+    width: 100%;
+    height: 680px;
+    background-image: url(https://images.unsplash.com/photo-1618945372420-2470ece5277c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.cinta-mapas{
+    color: rgb(255, 255, 255);
+    background-color: #1081d7cd;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: rgb(66, 66, 66);
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 60px;
+}
+
+.seccionMapas__final{
+    color: rgb(9, 12, 156);
+    background-color: #c7e1f78e;
+    font-family: sans-serif;
+    padding-top: 20px;
+    padding-left: 169px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.container-mapas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mapaDisney{
+    text-shadow: rgb(204, 28, 28);
+}
+.mapaUniversal{
+    transform: scale(1.1);
+    margin-bottom: 50px;
+}
+
+.mapas__h2{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+.sectionAtracciones{
+    width: 100%;
+    height: 680px;
+    background-image: url(https://images.unsplash.com/photo-1581909199603-0de32b43ffd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.container-tabla{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h2__atracciones--parques{
+    padding-top: 30px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.tabla__estilo {
+    background-color: #ffffff8e;
+    width: 70%;
+    align-items: center;
+    font-family: sans-serif;
+    border: 5px solid #800080;
+    margin:40px 0px
+}
+
+.filas{
+    text-align: left;
+}
+
+.h3__videosAtracciones{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.videoatracciones {
+    background-color:#800080;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sectionAlojamiento{
+    width: 100%;
+    height: 680px;
+    background-image: url(https://images.unsplash.com/photo-1637517774244-0461090bc900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+
+}
+
+.section__hotel{
+    background-color: rgb(235, 200, 156);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.cuadrohoteles{
+    background-color: rgb(245, 243, 240);
+    opacity: 0.6;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10%;
+    box-shadow: 6px 5px 5px rgb(10, 10, 10);
+}
+
+.h2__Hotel{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.lista__Hoteles{
+    color: rgb(7, 7, 7);
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+form{
+    width: 330px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #999;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.field{
+    border:solid 1px #999;
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 280px;
+}
+
+.label{
+    margin-left: 20px;
+    
+}
+
+.formespacios{
+    margin-top: 10px;
+}
+
+.bodycontactos{
+    background-color: rgb(96, 155, 125);
+}
+
+
+
+
+/* ------ Media Queries ----- */
+
+@media only screen and (max-width:777px){
+   .main__consejo{
+       height: 50px;
+       padding-left: 50px;
+       padding-right: 50px;
+   }
+
+   }
+
+
+@media only screen and (max-width:519px){
+    .main__consejo{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ 
+    }
+
+@media only screen and (max-width:459px){
+    .main__consejo{
+        height: 70px;
+        padding-left: 20px;        
+        padding-right: 20px;
+    }
+     
+    }
+
+@media only screen and (max-width:1200px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .galeriaimagen1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 70%;   
+        background-position: center;
+    
+    }
+    
+    .galeriaimagen2{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 70%;  
+        background-position: center;
+    }
+    
+    .galeriaimagen3{
+        grid-column: 3/4;
+        grid-row: 1/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 90%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail\ copia.png");
+        /* transform: scale(1.25); */
+        background-repeat: no-repeat;
+        background-size: 100%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen5{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 100%;  
+        background-position: center;         
+    }
+    
+    .galeriaimagen6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 100%;  
+        background-position: center;  
+        
+    }
+
+}
+
+
+@media only screen and (max-width:768px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .galeriaimagen1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 50%;   
+        background-position: center;
+    
+    }
+    
+    .galeriaimagen2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 50%;  
+        background-position: center;
+    }
+    
+    .galeriaimagen3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 70%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen4{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail\ copia.png");
+        /* transform: scale(1.25); */
+        background-repeat: no-repeat;
+        background-size: 80%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen5{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 80%;  
+        background-position: center;         
+    }
+    
+    .galeriaimagen6{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 80%;  
+        background-position: center;  
+        
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    
+    .galeriaimagen1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 30%;   
+        background-position: center;
+    
+    }
+    
+    .galeriaimagen2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 35%;  
+        background-position: center;
+    }
+    
+    .galeriaimagen3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 50%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail\ copia.png");
+        /* transform: scale(1.25); */
+        background-repeat: no-repeat;
+        background-size: 50%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 70%;  
+        background-position: center;         
+    }
+    
+    .galeriaimagen6{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 80%;  
+        background-position: center;  
+        
+    }
+
+}
+
+
+@media only screen and (max-width:1024) {
+    .mapaDisney{
+        transform: scale(0.6);
+    }
+
+    .mapaUniversal{
+        transform: scale(0.6);
+    }
+
+    .container-mapas{
+        transform: scale(0.6);
+    }
+
+}
