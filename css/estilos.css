@@ -55,15 +55,15 @@ li a:hover{
     padding-top: 10px;
     
 }
-
-.HeroIndex{
-    width: 100%;
-    height: 680px;
-    background-image: url(https://images.unsplash.com/photo-1581904902287-0991e3fd1725?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);
+/*reemplace esta clase por la clase "img-fluid" en la etiqueta "img"*/
+/* .HeroIndex{
+    /* width: 100%; */
+    /* height: 680px; */
+    /* background-image: url(https://images.unsplash.com/photo-1581904902287-0991e3fd1725?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center;
-}
+    background-position:center; */
+/* } */
 
 .embed-container {
     position: relative;
@@ -247,6 +247,10 @@ li a:hover{
 
 }
 
+.table {
+    width: 90%;
+    background-color: #c82121 !important;
+}
 .container-tabla{
     display:flex;
     flex-direction: column;
@@ -362,7 +366,12 @@ form{
     background-color: rgb(96, 155, 125);
 }
 
-
+.btn{
+    display: inline;
+    margin: 0% 12%;
+    padding: 5px 15px;
+    
+}
 
 
 /* ------ Media Queries ----- */
