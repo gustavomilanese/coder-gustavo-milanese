@@ -27,18 +27,22 @@
     background-color: #1081d7cd;    
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items:center;
+    margin:0px;
+    padding: 10px;
+    padding-top: 20px;
 }
 
 li{
-    font-size: 15px;
     font-family:sans-serif;
     list-style: none;
+
 }
 
 li a{
     color: #ffffff;
     text-decoration: none;
+
 }
 
 li a:hover{
@@ -48,11 +52,13 @@ li a:hover{
 
 .main__consejo{
     height: 35px;
-    background-color: #d5a60c8e;
-    font-family: sans-serif;
-    font-size: 17px;
+    background-color: #d6b4458e;
+    font-family: sans-serif !important;
+    font-size: 18px;
+    font-weight: 600;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
+    margin:0px;
     
 }
 /*reemplace esta clase por la clase "img-fluid" en la etiqueta "img"*/
@@ -239,7 +245,7 @@ li a:hover{
 
 .sectionAtracciones{
     width: 100%;
-    height: 680px;
+    height: 600px;
     background-image: url(https://images.unsplash.com/photo-1581909199603-0de32b43ffd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80);
     background-repeat: no-repeat;
     background-size:cover;
@@ -247,10 +253,18 @@ li a:hover{
 
 }
 
+h4{
+    margin-top: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
 .table {
     width: 90%;
-    background-color: #c82121 !important;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    color:#800080;
 }
+
 .container-tabla{
     display:flex;
     flex-direction: column;
@@ -274,8 +288,9 @@ li a:hover{
     margin:40px 0px
 }
 
-.filas{
+.titulo{
     text-align: left;
+    border-bottom: 3px solid #800080;
 }
 
 .h3__videosAtracciones{
@@ -368,9 +383,14 @@ form{
 
 .btn{
     display: inline;
-    margin: 0% 12%;
-    padding: 5px 15px;
-    
+    margin: 0% 15px;
+    width: 80px;
+}
+
+.form-group{
+    /* padding: 10px; */
+    padding:0 15px;
+    margin-bottom: 20px;
 }
 
 
