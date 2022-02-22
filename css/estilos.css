@@ -325,6 +325,12 @@ h4{
     padding-bottom: 50px;
 }
 
+.video{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
 .sectionAlojamiento{
     width: 100%;
     display: flex;
