@@ -4,7 +4,7 @@
 }
 
 .header__iconos{
-    background-color: rgb(252, 250, 249);
+    background-color: #ffffff;
     width: 100%;
     display: flex;
     height: 65px;
@@ -24,7 +24,7 @@
 .navegador__lista{
     width: 100%;
     height: 40px;
-    background-color: #1081d7cd;    
+    background: linear-gradient(40deg, #1CB5E0 0%, #000851 100%);
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -46,7 +46,7 @@ li a{
 }
 
 li a:hover{
-    color: rgb(78, 89, 218);
+    color: rgba(170, 176, 245, 0.633);
     outline: none;
 }
 
@@ -61,39 +61,54 @@ li a:hover{
     margin:0px;
     
 }
-/*reemplace esta clase por la clase "img-fluid" en la etiqueta "img"*/
+/* reemplace esta clase por la clase "img-fluid" en la etiqueta "img" */
+
 /* .HeroIndex{
-    /* width: 100%; */
-    /* height: 680px; */
-    /* background-image: url(https://images.unsplash.com/photo-1581904902287-0991e3fd1725?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80);
+    width: 100%;
+    height: 800px;
+    background-image: url(https://images.unsplash.com/photo-1633182203832-76ede0337ca2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center; */
-/* } */
+    background-position:center;
+} */
+
+/* 
+.carousel-slide{
+    overflow: hidden;
+    height: 800px;
+} */
+
+.carousel-inner{
+    margin-top: 0px;    
+    height: 1000px;
+    overflow-x: hidden;
+}
 
 .embed-container {
     position: relative;
     padding-bottom: 56.25%;
+    padding-right: 20px;
     height: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center !important;
 }
 .embed-container iframe {
     position: absolute;
     top:0;
     left: 0;
-    width: 95%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-
+    padding-left: 200px;
+    padding-right: 10px;
 }
 
 /* defino la estructura de la galeria de imágenes con grid, o sea la cantidad de columnas y de filas*/
 .galeria{
     /* width: 100%; */
     /* padding-top: 30px; */
-    background-color: #1081d7cd;
+    background-color: #89c1ebcd;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -106,7 +121,6 @@ li a:hover{
     background-repeat: no-repeat;
     background-size: 80%;   
     background-position: center;
-
 }
 
 .galeriaimagen2{
@@ -124,8 +138,7 @@ li a:hover{
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail\ copia.png");
     background-repeat: no-repeat;
     background-size: 70%;  
-    background-position: center; 
-    
+    background-position: center;
 }
 
 .galeriaimagen4{
@@ -135,8 +148,7 @@ li a:hover{
     /* transform: scale(1.25); */
     background-repeat: no-repeat;
     background-size: 100%;  
-    background-position: center; 
-    
+    background-position: center;
 }
 
 .galeriaimagen5{
@@ -156,22 +168,23 @@ li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
 }
+
 .footer__iconos{
-    background-color: white;
+    background-color: #038ffacd;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 20px;
+    margin-top: 100px;   
     padding-bottom: 20px;
-    
 }
 
 .footer__h3{
-    font-size: 20px;
+    font-size: 22px;
     font-family: sans-serif;
     padding-left: 20px;
+    color: white;
 }
 
 .redesSociales{
@@ -200,15 +213,15 @@ li a:hover{
 }
 
 .cinta-mapas{
+    font-size: 20px;
     color: rgb(255, 255, 255);
-    background-color: #1081d7cd;
+    background: linear-gradient(140deg, #1CB5E0 0%, #000851 100%);
     font-family: sans-serif;
-    text-align: center;
     text-shadow: rgb(66, 66, 66);
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
-    height: 60px;
+    height: 50px;
 }
 
 .seccionMapas__final{
@@ -260,38 +273,42 @@ h4{
 
 .table {
     width: 90%;
-    margin-top: 40px;
-    margin-bottom: 100px;
-    color:#800080;
+    margin-top: 4em;
+    margin-bottom: 10em;
+    margin-left: 3.5em;
+    color:#088cf2;
+    box-shadow: 20px 20px 50px grey;
+    border-radius: 10px;    
 }
 
-.container-tabla{
+/* .container-tabla{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+ } */
 
-}
-
+/* 
 .h2__atracciones--parques{
-    padding-top: 30px;
+    margin-top: 150px;
     text-align: center;
     font-family: sans-serif;
-}
+    font-size: 40px;
+} */
 
-.tabla__estilo {
+/* .tabla__estilo {
     background-color: #ffffff8e;
     width: 70%;
     align-items: center;
     font-family: sans-serif;
     border: 5px solid #800080;
-    margin:40px 0px
-}
+    margin:40px 0px;
+} */
 
-.titulo{
+/* .titulo{
     text-align: left;
     border-bottom: 3px solid #800080;
-}
+} */
 
 .h3__videosAtracciones{
     margin-top: 20px;
@@ -301,44 +318,88 @@ h4{
 }
 
 .videoatracciones {
-    background-color:#800080;
+    background-color:#ffffff;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .sectionAlojamiento{
     width: 100%;
-    height: 680px;
-    background-image: url(https://images.unsplash.com/photo-1637517774244-0461090bc900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
+    display: flex;
+    justify-items: center;
 
 }
 
 .section__hotel{
-    background-color: rgb(235, 200, 156);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
 }
 
-.cuadrohoteles{
+/* .cuadrohoteles{
     background-color: rgb(245, 243, 240);
     opacity: 0.6;
     padding: 20px;
     margin: 30px;
     border-radius: 10%;
     box-shadow: 6px 5px 5px rgb(10, 10, 10);
-}
+} */
 
-.h2__Hotel{
+/* .h2__Hotel{
     font-family: sans-serif;
     font-size: 25px;
     font-weight:bold;
+} */
+
+/* .card-body{
+    padding-top:18px !important;
+} */
+
+.Lista__item{
+    list-style-type:disc;
+    padding-top: 5px;
+    color: rgba(55, 54, 54, 0.411);
+}
+
+h7{
+    color: rgba(55, 54, 54, 0.496);
+}
+
+h7:hover{
+    color: rgba(41, 148, 235, 0.674);
+}
+
+.card {
+    margin: 50px;
+    width: 18em;
+    height: auto;
+    background: linear-gradient(130deg, #1CB5E0 0%, #000851 100%);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align:left;
+    box-shadow: 20px 20px 30px #949696;
+    border: 0px solid white;    
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card-body{
+    font-size: 16px !important;
+    background-color: white;
+    color: rgb(19, 132, 189);
+    text-align: left;
+    padding-top:1.5rem;
+    padding-right: 0.5rem;
+    padding-left:1rem;
 }
 
 .lista__Hoteles{
@@ -348,17 +409,28 @@ h4{
     padding-bottom: 30px;
 }
 
+.container__contactos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bodycontactos{
+    background-color: rgb(206, 227, 216);
+}
 
 form{
-    width: 330px;
-    margin: 0 auto;
+    width: 700px;
+    margin: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
     background-color: #fff;
     padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
     padding-bottom: 30px;
-    color: #999;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 30px;
+    color: rgb(27, 27, 27);
+    border-radius: 8px;
+    box-shadow: 20px 20px 50px grey;
 }
 
 .field{
@@ -377,9 +449,7 @@ form{
     margin-top: 10px;
 }
 
-.bodycontactos{
-    background-color: rgb(96, 155, 125);
-}
+
 
 .btn{
     display: inline;
@@ -388,9 +458,16 @@ form{
 }
 
 .form-group{
-    /* padding: 10px; */
+    padding-top: 10px;
     padding:0 15px;
     margin-bottom: 20px;
+}
+
+.hombrepapa{
+    margin-top: 20%;
+    margin-left: 20%;
+    margin-bottom: 20%;
+    margin-right: 10%;
 }
 
 
