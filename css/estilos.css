@@ -206,19 +206,25 @@ li a:hover{
 }
 
 .cinta-mapas{
-    font-size: 20px;
+    text-align: left;
     color: rgb(255, 255, 255);
-    background: linear-gradient(140deg, #1CB5E0 0%, #000851 100%);
+    background: linear-gradient(130deg, #e496bb 0%, #000851 100%);
     font-family: sans-serif;
     text-shadow: rgb(66, 66, 66);
-    padding-top: 10px;
+    margin-top: 100px !important;
+    padding-top: 50px;
     padding-left: 10%;
     padding-right: 10%;
-    height: 50px;
+    height: 200px;
+    
+}
+
+p{
+    font-size: 19px;
 }
 
 .seccionMapas__final{
-    color: rgb(9, 12, 156);
+    color: rgb(91, 93, 177);
     background-color: #c7e1f78e;
     font-family: sans-serif;
     padding-top: 20px;
@@ -235,16 +241,16 @@ li a:hover{
 }
 
 .mapaDisney{
-    text-shadow: rgb(204, 28, 28);
+    transform: scale(0.7);
 }
 .mapaUniversal{
-    transform: scale(1.1);
+    transform: scale(0.7);
     margin-bottom: 50px;
 }
 
 .mapas__h2{
-    text-align: center;
-    margin-top: 60px;
+    text-align: left;
+    margin-top: 30px;
     margin-bottom: 30px;
     font-family: sans-serif;
 }
@@ -368,7 +374,7 @@ h7:hover{
 
 .card {
     margin: 50px;
-    width: 18em;
+    width: 20em;
     height: auto;
     background: linear-gradient(130deg, #1CB5E0 0%, #000851 100%);
     color: white;
@@ -379,6 +385,11 @@ h7:hover{
     border: 0px solid white;    
     margin-bottom: 150px;
     margin-top: 150px;
+}
+
+.card1{
+    margin-top: 100px;
+    background: linear-gradient(130deg, #ea73ab 0%, #000851 100%);
 }
 
 .card:hover {
@@ -395,11 +406,29 @@ h7:hover{
     padding-left:1rem;
 }
 
+.violeta{
+    color: rgb(49, 3, 72);
+}
+
 .lista__Hoteles{
     color: rgb(7, 7, 7);
     font-size: 50px;
     padding-top: 20px;
     padding-bottom: 30px;
+}
+
+.imagen__container{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-top: -200px;
+    margin-bottom: -100px;
+}
+
+.imgvegas{
+    transform: scale(0.7);
+    justify-items: center;
+    
 }
 
 .container__contactos{
