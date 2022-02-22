@@ -72,21 +72,14 @@ li a:hover{
     background-position:center;
 } */
 
-/* 
-.carousel-slide{
-    overflow: hidden;
-    height: 800px;
-} */
-
 .carousel-inner{
-    margin-top: 0px;    
-    height: auto;
-    overflow-x: hidden;
+    height: 900px;
+    overflow:hidden;
 }
 
 .embed-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 55%;
     padding-right: 20px;
     height: 0;
     overflow: hidden;
@@ -98,7 +91,7 @@ li a:hover{
     top:0;
     left: 0;
     width: 90%;
-    height: 80%;
+    height: 100%;
     padding-top: 100px;
     padding-left: 200px;
     padding-right: 10px;
