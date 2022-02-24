@@ -265,6 +265,16 @@ p{
 
 }
 
+.jumbotron{
+    background-image: url(../Images/Carousel/CastleDisney.png);
+    transform: scale(0.99);
+    background-position-x: center;
+    height: 800px;
+    background-repeat: none;
+    background-blend-mode:color-burn;
+    background-size: cover;
+}
+
 h4{
     margin-top: 60px;
     font-family:Verdana, Geneva, Tahoma, sans-serif !important;
