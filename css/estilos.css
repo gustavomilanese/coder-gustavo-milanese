@@ -165,43 +165,45 @@ li a:hover{
     height: 350px;
     width: 350px;
     padding-top: 50px;
-  
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .footer__iconos{
-    background-color: #038ffacd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgba(13,110,253);
+    /* display: flex; */
+    align-items: left;
     padding-top: 20px;
-    margin-top: 100px;   
-    padding-bottom: 20px;
+    /* margin-top: 100px;    */
+    padding-bottom: 50px;
 }
 
+h3{
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+}
 .footer__h3{
-    font-size: 22px;
+    font-size: 16px;
     font-family: sans-serif;
     padding-left: 20px;
     color: white;
 }
 
 .redesSociales{
-    padding-right: 20px;
+    padding-left: 10px;
 }
 
 .logofacebook{
-    transform: scale(0.8);
+    transform: scale(0.5);
 }
 
 .logoInsta{
-    transform: scale(0.8);
+    transform: scale(0.5);
 }
 
 .logoyoutube{
-    transform: scale(0.8);
+    transform: scale(0.5);
 }
 
 .HeroMapa{
@@ -274,14 +276,8 @@ p{
 }
 
 .jumbotron{
-    background-image: url(../Images/Carousel/CastleDisney.png);
-    transform: scale(0.95);
     background-position-x: center;
-    height: 800px;
-    background-repeat: none;
-    background-blend-mode:color-burn;
-    background-size: cover;
-    color:rgb(227, 216, 100) !important;
+    color:rgb(255, 255, 255) !important;
 }
 
 h4{
@@ -358,10 +354,20 @@ h4{
 }
 
 .section__hotel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section__InfUtil{
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    background-image:url(../Images/Circulosfondo.svg);
+    background-position: center;
+    /* background-size: cover; */
+    
 }
 
 /* .cuadrohoteles{
@@ -446,6 +452,14 @@ h7:hover{
     display: flex;
     justify-content: center;
     width: 1200px;
+    margin-top: -200px;
+    margin-bottom: -100px;
+}
+
+.imagen__container1{
+    display: flex;
+    justify-content: center;
+    width: auto;
     margin-top: -200px;
     margin-bottom: -100px;
 }
@@ -609,7 +623,7 @@ form{
         grid-row: 3/4;
         background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail\ copia.png");
         background-repeat: no-repeat;
-        background-size: 100%;  
+        background-size: 50%;  
         background-position: center;  
         
     }
