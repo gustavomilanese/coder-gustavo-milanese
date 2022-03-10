@@ -50,52 +50,24 @@ li a:hover{
     outline: none;
 }
 
-.main__consejo{
-    height: 35px;
-    background-color: #d6b4458e;
-    font-family: sans-serif !important;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 5px;
-    margin:0px;
-    
+.carousel-control-next{
+    height: auto;
 }
-/* reemplace esta clase por la clase "img-fluid" en la etiqueta "img" */
 
-/* .HeroIndex{
-    width: 100%;
-    height: 800px;
-    background-image: url(https://images.unsplash.com/photo-1633182203832-76ede0337ca2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-} */
-
-.carousel-inner{
-    height: 800px;
-    overflow:hidden;
-}
 
 .embed-container {
-    position: relative;
-    padding-bottom: 55%;
-    padding-right: 20px;
-    height: 0;
-    overflow: hidden;
     display: flex;
     justify-content: center !important;
+    flex-wrap: wrap;
 }
+
 .embed-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 90%;
-    height: 100%;
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 10px;
+    width: 100%;
+    margin-top:50px;
+    padding: 0 100px 0;
+    
 }
+
 
 /* defino la estructura de la galeria de imágenes con grid, o sea la cantidad de columnas y de filas*/
 .galeria{
@@ -534,32 +506,7 @@ form{
 
 /* ------ Media Queries ----- */
 
-@media only screen and (max-width:777px){
-   .main__consejo{
-       height: 50px;
-       padding-left: 50px;
-       padding-right: 50px;
-   }
 
-   }
-
-
-@media only screen and (max-width:519px){
-    .main__consejo{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
- 
-    }
-
-@media only screen and (max-width:459px){
-    .main__consejo{
-        height: 70px;
-        padding-left: 20px;        
-        padding-right: 20px;
-    }
-     
-    }
 
 @media only screen and (max-width:1200px) {
     .galeria{
@@ -652,7 +599,7 @@ form{
         grid-row: 1/2;
         background-image: url("../Images/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail\ copia.png");
         background-repeat: no-repeat;
-        background-size: 50%;  
+        background-size: 40%;  
         background-position: center;
     }
     
@@ -661,7 +608,7 @@ form{
         grid-row: 2/3;
         background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail\ copia.png");
         background-repeat: no-repeat;
-        background-size: 70%;  
+        background-size: 80%;  
         background-position: center; 
         
     }
@@ -672,7 +619,7 @@ form{
         background-image: url("../Images/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail\ copia.png");
         /* transform: scale(1.25); */
         background-repeat: no-repeat;
-        background-size: 80%;  
+        background-size: 60%;  
         background-position: center; 
         
     }
@@ -682,7 +629,7 @@ form{
         grid-row: 3/4;
         background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail\ copia.png");
         background-repeat: no-repeat;
-        background-size: 80%;  
+        background-size: 100%;  
         background-position: center;         
     }
     
@@ -691,7 +638,7 @@ form{
         grid-row: 3/4;
         background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail\ copia.png");
         background-repeat: no-repeat;
-        background-size: 80%;  
+        background-size: 70%;  
         background-position: center;  
         
     }
@@ -702,7 +649,7 @@ form{
     .galeria{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
     }
     
     .galeriaimagen1{
@@ -767,17 +714,105 @@ form{
 }
 
 
-@media only screen and (max-width:1024) {
-    .mapaDisney{
-        transform: scale(0.6);
+@media only screen and (min-width:1024) 
+{
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
-
-    .mapaUniversal{
-        transform: scale(0.6);
+    
+    .galeriaimagen1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 30%;   
+        background-position: center;
+    
     }
-
-    .container-mapas{
-        transform: scale(0.6);
+    
+    .galeriaimagen2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 35%;  
+        background-position: center;
     }
+    
+    .galeriaimagen3{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 50%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail\ copia.png");
+        /* transform: scale(1.25); */
+        background-repeat: no-repeat;
+        background-size: 50%;  
+        background-position: center; 
+        
+    }
+    
+    .galeriaimagen5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 70%;  
+        background-position: center;         
+    }
+    
+    .galeriaimagen6{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail\ copia.png");
+        background-repeat: no-repeat;
+        background-size: 80%;  
+        background-position: center;  
+        
+    } 
 
 }
+
+@media only screen and (max-width:768){
+    .carousel-inner{
+        width:100% !important;
+        height: 400px !important;
+        margin-top: 20px;        
+        margin-bottom: 20px;
+        /* display: flex;
+        flex-wrap: nowrap; */
+    }
+ 
+    }
+ 
+ @media only screen and (max-width:425px){
+     .carousel-inner{
+         width:100% !important;
+         height: auto;
+         margin-top: 20px;        
+         margin-bottom: 20px;
+         display: flex;
+         flex-wrap: nowrap;
+     }
+
+     .embed-container{
+        height: 400px;
+     }
+
+     .embed-container iframe{
+        height: 400px;
+        width: 1200px;
+     }
+
+
+     }
