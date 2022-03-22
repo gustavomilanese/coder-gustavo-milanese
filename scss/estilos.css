@@ -7,6 +7,8 @@
 .header__iconos {
   background-color: #ffffff;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 65px;
 }
@@ -19,16 +21,22 @@
 .header__div--logovegas {
   margin-left: auto;
   margin-right: auto;
-  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .navegador__lista {
   width: 100%;
   height: 40px;
   background: linear-gradient(40deg, #1CB5E0 0%, #000851 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px;
   padding: 10px;
   padding-top: 20px;
@@ -54,9 +62,14 @@ li a:hover {
 }
 
 .embed-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center !important;
-  flex-wrap: wrap;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .embed-container iframe {
@@ -74,15 +87,22 @@ li a:hover {
   background-size: cover;
   padding-top: 50px;
   padding-bottom: 100px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   margin-top: 100px;
   margin-bottom: 0px;
 }
 
 .galeriaimagen1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
   grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1/3;
   background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail copia.png");
   background-repeat: no-repeat;
@@ -99,7 +119,11 @@ li a:hover {
     background-position: center;
 } */
 .galeriaimagen3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
   grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   grid-row: 1/2;
   background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail copia.png");
   background-repeat: no-repeat;
@@ -108,7 +132,11 @@ li a:hover {
 }
 
 .galeriaimagen4 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
   grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   grid-row: 1/3;
   background-image: url("../Images/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail copia.png");
   /* transform: scale(1.25); */
@@ -118,7 +146,11 @@ li a:hover {
 }
 
 .galeriaimagen5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
   grid-row: 2/3;
   background-image: url("../Images/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail copia.png");
   background-repeat: no-repeat;
@@ -140,7 +172,9 @@ li a:hover {
 .footer__iconos {
   background-color: #0d6dfd;
   /* display: flex; */
-  align-items: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   padding-top: 20px;
   /* margin-top: 100px;    */
   padding-bottom: 50px;
@@ -163,15 +197,18 @@ h3 {
 }
 
 .logofacebook {
-  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 .logoInsta {
-  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 .logoyoutube {
-  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 .HeroMapa {
@@ -211,17 +248,26 @@ p {
 }
 
 .container-mapas {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mapaDisney {
-  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .mapaUniversal {
-  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   margin-bottom: 50px;
 }
 
@@ -257,7 +303,8 @@ h4 {
   margin-bottom: 10em;
   margin-left: 3.5em;
   color: #088cf2;
-  box-shadow: 20px 20px 50px grey;
+  -webkit-box-shadow: 20px 20px 50px grey;
+          box-shadow: 20px 20px 50px grey;
   border-radius: 10px;
 }
 
@@ -295,36 +342,56 @@ h4 {
 
 .videoatracciones {
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 100px;
   padding-bottom: 50px;
 }
 
 .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 100px;
 }
 
 .sectionAlojamiento {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
 }
 
 .section__hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section__InfUtil {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url(../Images/Circulosfondo.svg);
   background-position: center;
   /* background-size: cover; */
@@ -369,7 +436,8 @@ h7:hover {
   font-size: 20px;
   border-radius: 10px;
   text-align: left;
-  box-shadow: 20px 20px 30px #949696;
+  -webkit-box-shadow: 20px 20px 30px #949696;
+          box-shadow: 20px 20px 30px #949696;
   border: 0px solid white;
   margin-bottom: 150px;
   margin-top: 150px;
@@ -381,7 +449,8 @@ h7:hover {
 }
 
 .card:hover {
-  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .card-body {
@@ -406,29 +475,41 @@ h7:hover {
 }
 
 .imagen__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 1200px;
   margin-top: -200px;
   margin-bottom: -100px;
 }
 
 .imagen__container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: auto;
   margin-top: -200px;
   margin-bottom: -100px;
 }
 
 .imgvegas {
-  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
   justify-items: center;
 }
 
 .container__contactos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .bodycontactos {
@@ -447,7 +528,8 @@ form {
   padding-bottom: 30px;
   color: #1b1b1b;
   border-radius: 8px;
-  box-shadow: 20px 20px 50px grey;
+  -webkit-box-shadow: 20px 20px 50px grey;
+          box-shadow: 20px 20px 50px grey;
 }
 
 .field {
@@ -487,58 +569,79 @@ form {
 /* ------ Media Queries ----- */
 @media only screen and (max-width: 1200px) {
   .galeria {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
   }
-
   .galeriaimagen1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/3;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
   }
-
   .galeriaimagen2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/3;
     background-image: url("../Images/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
   }
-
   .galeriaimagen3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/3;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
   }
-
   .galeriaimagen4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
     background-image: url("../Images/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
   }
-
   .galeriaimagen5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
   }
-
   .galeriaimagen6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail copia.png");
     background-repeat: no-repeat;
@@ -546,42 +649,58 @@ form {
     background-position: center;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .galeria {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
   }
-
   .galeriaimagen1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
   }
-
   .galeriaimagen2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     background-image: url("../Images/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center;
   }
-
   .galeriaimagen3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
   }
-
   .galeriaimagen4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     background-image: url("../Images/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail copia.png");
     /* transform: scale(1.25); */
@@ -589,18 +708,24 @@ form {
     background-size: 60%;
     background-position: center;
   }
-
   .galeriaimagen5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
   }
-
   .galeriaimagen6 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail copia.png");
     background-repeat: no-repeat;
@@ -608,42 +733,58 @@ form {
     background-position: center;
   }
 }
+
 @media only screen and (max-width: 576) {
   .galeria {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7, 1fr);
   }
-
   .galeriaimagen1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
   }
-
   .galeriaimagen2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: center;
   }
-
   .galeriaimagen3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
   }
-
   .galeriaimagen4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
     grid-row: 4/5;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail copia.png");
     /* transform: scale(1.25); */
@@ -651,18 +792,24 @@ form {
     background-size: 50%;
     background-position: center;
   }
-
   .galeriaimagen5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
     grid-row: 5/6;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
   }
-
   .galeriaimagen6 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
     grid-row: 6/7;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail copia.png");
     background-repeat: no-repeat;
@@ -670,42 +817,58 @@ form {
     background-position: center;
   }
 }
+
 @media only screen and (min-width: 1024) {
   .galeria {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
   }
-
   .galeriaimagen1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-minnie-mouse-minnie-mouse-mickey-mouse-the-walt-disney-company-baby-minnie-mouse-3d-computer-graphics-color-sticker-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
   }
-
   .galeriaimagen2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-moana-the-walt-disney-company-moana-disney-moana-illustration-miscellaneous-disney-princess-film-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: center;
   }
-
   .galeriaimagen3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-tangles-illustration-tangled-the-video-game-rapunzel-flynn-rider-the-walt-disney-company-tangled-disney-princess-cartoon-fictional-character-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
   }
-
   .galeriaimagen4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mr-potato-head-illustration-mr-potato-head-mrs-potato-head-lelulugu-toy-the-walt-disney-company-isabel-child-hand-cartoon-thumbnail copia.png");
     /* transform: scale(1.25); */
@@ -713,18 +876,24 @@ form {
     background-size: 50%;
     background-position: center;
   }
-
   .galeriaimagen5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-mickey-mouse-desktop-cartoon-the-walt-disney-company-mickey-heroes-toy-technology-thumbnail copia.png");
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
   }
-
   .galeriaimagen6 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     background-image: url("../Images/drive-download-20220127T020044Z-001/png-transparent-beauty-and-the-beast-dancing-belle-beauty-and-the-beast-the-walt-disney-company-disney-princess-belle-carnivoran-fictional-character-film-thumbnail copia.png");
     background-repeat: no-repeat;
@@ -732,6 +901,7 @@ form {
     background-position: center;
   }
 }
+
 @media only screen and (max-width: 768) {
   .carousel-inner {
     width: 100% !important;
@@ -739,27 +909,28 @@ form {
     margin-top: 20px;
     margin-bottom: 20px;
     /* display: flex;
-    flex-wrap: nowrap; */
+        flex-wrap: nowrap; */
   }
 }
+
 @media only screen and (max-width: 425px) {
   .carousel-inner {
     width: 100% !important;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-
   .embed-container {
     height: 400px;
   }
-
   .embed-container iframe {
     height: 400px;
     width: 1200px;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */
