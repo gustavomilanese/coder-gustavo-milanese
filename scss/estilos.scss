@@ -1,5 +1,38 @@
-$color1:#ffffff;
+/* Importo de google font una tipografia para utilizar */
+
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+/* variables para colores*/
+
+$colorblanco:#ffffff;
 $colorfooter:#0d6dfd;
+$colorcard:#1cb5e0;
+
+/* variables para fonts */
+
+$font: sans-serif;
+$fontinspiration: 'inspiration';
+
+/*bucle de repetición con la clase/selector "casitodos-1 -2 y -3 */
+
+@for $i from 1 through 3 {
+    .casitodos-#{$i} {
+        width: 6em * $i;
+    }
+}
+
+$color:$colorfooter;
+
+/*agrego un degrade de color en xxx.html */
+
+@for $in from 1 through 5 {
+    .bucle-#{$in} {
+        background-color: lighten($color, $in * 10%);
+        border: 1px solid white ;
+        height: 100px !important;
+    }
+}
+
 
 
 * {
@@ -8,7 +41,7 @@ $colorfooter:#0d6dfd;
 }
 
 .header__iconos{
-    background-color: $color1;
+    background-color: $colorblanco;
     width: 100%;
     display: flex;
     height: 65px;
@@ -28,7 +61,7 @@ $colorfooter:#0d6dfd;
 .navegador__lista{
     width: 100%;
     height: 40px;
-    background: linear-gradient(40deg, #1CB5E0 0%, #000851 100%);
+    background: linear-gradient(40deg,$colorcard 0%, #000851 100%);
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -38,13 +71,13 @@ $colorfooter:#0d6dfd;
 }
 
 li{
-    font-family:sans-serif;
+    font-family:$font;
     list-style: none;
 
 }
 
 li a{
-    color: $color1;
+    color: $colorblanco;
     text-decoration: none;
 
 }
@@ -159,8 +192,8 @@ h3{
     padding-bottom: 0px !important;
 }
 .footer__h3{
-    font-size: 16px;
-    font-family: sans-serif;
+    font-size: 40px;
+    font-family: $fontinspiration !important;
     padding-left: 20px;
     color: white;
 }
@@ -192,9 +225,9 @@ h3{
 
 .cinta-mapas{
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: $colorblanco;
     background: linear-gradient(130deg, #e496bb 0%, #000851 100%);
-    font-family: sans-serif;
+    font-family: $font;
     text-shadow: rgb(66, 66, 66);
     margin-top: 100px !important;
     padding-top: 50px;
@@ -211,7 +244,7 @@ p{
 .seccionMapas__final{
     color: rgb(91, 93, 177);
     background-color: #c7e1f78e;
-    font-family: sans-serif;
+    font-family: $font;
     padding-top: 20px;
     padding-left: 169px;
     padding-bottom: 10px;
@@ -237,7 +270,7 @@ p{
     text-align: left;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: sans-serif;
+    font-family: $font;
 }
 
 .sectionAtracciones{
@@ -252,7 +285,7 @@ p{
 
 .jumbotron{
     background-position-x: center;
-    color:rgb(255, 255, 255) !important;
+    color:$colorblanco !important;
 }
 
 h4{
@@ -302,12 +335,12 @@ h4{
 .h3__videosAtracciones{
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: sans-serif;
+    font-family: $font;
     font-size: 30px;
 }
 
 .videoatracciones {
-    background-color:$color1;
+    background-color:$colorblanco;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -382,7 +415,7 @@ h7:hover{
     margin: 50px;
     width: 20em;
     height: auto;
-    background: linear-gradient(130deg, #1CB5E0 0%, #000851 100%);
+    background: linear-gradient(130deg, $colorcard 0%, #000851 100%);
     color: white;
     font-size: 20px;
     border-radius: 10px;

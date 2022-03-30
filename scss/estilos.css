@@ -1,4 +1,52 @@
 @charset "UTF-8";
+/* Importo de google font una tipografia para utilizar */
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+/* variables para colores*/
+/* variables para fonts */
+/*bucle de repetición con la clase/selector "casitodos-1 -2 y -3 */
+.casitodos-1 {
+  width: 6em;
+}
+
+.casitodos-2 {
+  width: 12em;
+}
+
+.casitodos-3 {
+  width: 18em;
+}
+
+/*agrego un degrade de color en xxx.html */
+.bucle-1 {
+  background-color: #408cfd;
+  border: 1px solid white;
+  height: 100px !important;
+}
+
+.bucle-2 {
+  background-color: #72aafe;
+  border: 1px solid white;
+  height: 100px !important;
+}
+
+.bucle-3 {
+  background-color: #a5c9fe;
+  border: 1px solid white;
+  height: 100px !important;
+}
+
+.bucle-4 {
+  background-color: #d7e7ff;
+  border: 1px solid white;
+  height: 100px !important;
+}
+
+.bucle-5 {
+  background-color: white;
+  border: 1px solid white;
+  height: 100px !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +76,7 @@
 .navegador__lista {
   width: 100%;
   height: 40px;
-  background: linear-gradient(40deg, #1CB5E0 0%, #000851 100%);
+  background: linear-gradient(40deg, #1cb5e0 0%, #000851 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,8 +234,8 @@ h3 {
 }
 
 .footer__h3 {
-  font-size: 16px;
-  font-family: sans-serif;
+  font-size: 40px;
+  font-family: "inspiration" !important;
   padding-left: 20px;
   color: white;
 }
@@ -222,7 +270,7 @@ h3 {
 
 .cinta-mapas {
   text-align: left;
-  color: white;
+  color: #ffffff;
   background: linear-gradient(130deg, #e496bb 0%, #000851 100%);
   font-family: sans-serif;
   text-shadow: #424242;
@@ -289,7 +337,7 @@ p {
 
 .jumbotron {
   background-position-x: center;
-  color: white !important;
+  color: #ffffff !important;
 }
 
 h4 {
@@ -431,7 +479,7 @@ h7:hover {
   margin: 50px;
   width: 20em;
   height: auto;
-  background: linear-gradient(130deg, #1CB5E0 0%, #000851 100%);
+  background: linear-gradient(130deg, #1cb5e0 0%, #000851 100%);
   color: white;
   font-size: 20px;
   border-radius: 10px;
