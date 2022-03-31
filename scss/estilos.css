@@ -3,48 +3,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 /* variables para colores*/
 /* variables para fonts */
-/*bucle de repetición con la clase/selector "casitodos-1 -2 y -3 */
-.casitodos-1 {
-  width: 6em;
-}
-
-.casitodos-2 {
-  width: 12em;
-}
-
-.casitodos-3 {
-  width: 18em;
-}
-
-/*agrego un degrade de color en xxx.html */
-.bucle-1 {
+/*agrego un degrade de color en mapas.html */
+.rulo-1 {
   background-color: #408cfd;
   border: 1px solid white;
-  height: 100px !important;
+  color: #408cfd;
 }
 
-.bucle-2 {
+.rulo-2 {
   background-color: #72aafe;
   border: 1px solid white;
-  height: 100px !important;
+  color: #72aafe;
 }
 
-.bucle-3 {
+.rulo-3 {
   background-color: #a5c9fe;
   border: 1px solid white;
-  height: 100px !important;
+  color: #a5c9fe;
 }
 
-.bucle-4 {
+.rulo-4 {
   background-color: #d7e7ff;
   border: 1px solid white;
-  height: 100px !important;
+  color: #d7e7ff;
 }
 
-.bucle-5 {
+.rulo-5 {
   background-color: white;
   border: 1px solid white;
-  height: 100px !important;
+  color: white;
 }
 
 * {

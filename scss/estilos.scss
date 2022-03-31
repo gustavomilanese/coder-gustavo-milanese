@@ -13,26 +13,22 @@ $colorcard:#1cb5e0;
 $font: sans-serif;
 $fontinspiration: 'inspiration';
 
-/*bucle de repetición con la clase/selector "casitodos-1 -2 y -3 */
-
-@for $i from 1 through 3 {
-    .casitodos-#{$i} {
-        width: 6em * $i;
-    }
-}
-
-$color:$colorfooter;
-
-/*agrego un degrade de color en xxx.html */
+/*agrego un degrade de color en mapas.html */
 
 @for $in from 1 through 5 {
-    .bucle-#{$in} {
-        background-color: lighten($color, $in * 10%);
+    .rulo-#{$in} {
+        background-color: lighten(#0d6dfd, $in * 10%);
         border: 1px solid white ;
-        height: 100px !important;
+        color: lighten(#0d6dfd, $in * 10%);
     }
 }
 
+@mixin important-text {
+    color: #0d6dfd;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid grey;
+  }
 
 
 * {
